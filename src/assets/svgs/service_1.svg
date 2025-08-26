@@ -1,20 +1,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="64px" height="64px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+<svg width="64px" height="64px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<defs>
-<style>.cls-1{fill:none;stroke:#ffffff;stroke-miterlimit:10;stroke-width:1.91px;}</style>
-</defs>
-<polygon class="cls-1" points="14.86 22.5 9.14 22.5 9.14 3.41 12 1.5 14.86 3.41 14.86 22.5"/>
-<polygon class="cls-1" points="20.59 22.5 14.86 22.5 14.86 3.41 17.73 1.5 20.59 3.41 20.59 22.5"/>
-<polygon class="cls-1" points="9.14 22.5 3.41 22.5 3.41 3.41 6.27 1.5 9.14 3.41 9.14 22.5"/>
-<line class="cls-1" x1="5.32" y1="8.18" x2="7.23" y2="8.18"/>
-<line class="cls-1" x1="11.05" y1="8.18" x2="12.95" y2="8.18"/>
-<line class="cls-1" x1="16.77" y1="8.18" x2="18.68" y2="8.18"/>
-<line class="cls-1" x1="5.32" y1="17.73" x2="7.23" y2="17.73"/>
-<line class="cls-1" x1="11.05" y1="17.73" x2="12.95" y2="17.73"/>
-<line class="cls-1" x1="16.77" y1="17.73" x2="18.68" y2="17.73"/>
-</g>
+<g id="SVGRepo_iconCarrier"> <path d="M8 2C8.55228 2 9 1.55228 9 1C9 0.447715 8.55228 0 8 0C7.44772 0 7 0.447715 7 1C7 1.55228 7.44772 2 8 2Z" fill="#ffffff"/> <path d="M7 6V4H9V6H13C14.1046 6 15 6.89543 15 8V16H1V14H13V12H1V10H13V8H1V6H7Z" fill="#ffffff"/> </g>
 </svg>

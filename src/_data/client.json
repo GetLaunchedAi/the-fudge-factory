@@ -1,15 +1,15 @@
 {
-  "name": "Michigan Fencing Solutions",
-  "email": "Richardsturd@gmail.com",
-  "phone": "269-615-8646",
-  "phoneFormatted": "(269) 615-8646",
+  "name": "The Fudge Factory",
+  "email": "Aronoffmark031@gmail.com",
+  "phone": "616-262-7727",
+  "phoneFormatted": "(616) 262-7727",
   "address": {
-    "lineOne": "Kalamazoo, MI 49024, United States",
+    "lineOne": "",
     "lineTwo": "",
-    "city": "Kalamazoo",
-    "county": "Kalamazoo County",
-    "postcode": "49024",
-    "mapLink": "https://maps.app.goo.gl/Xj2fBuK1cVarKzdF6"
+    "city": "",
+    "county": "",
+    "postcode": "",
+    "mapLink": ""
   },
-  "domain": "puremichiganfencingsolutions.com"
+  "domain": ""
 }
