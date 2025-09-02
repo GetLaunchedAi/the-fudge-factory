@@ -281,7 +281,7 @@
   }
   #navigation .logo {
     display: inline-block;
-    height: 1.875rem;
+    height: 5rem;
     width: auto;
   }
   #navigation .logo img {
@@ -458,7 +458,7 @@
     background: var(--primary);
   }
   body.scroll #navigation .background-color-div {
-    height: 100%;
+    height: 125%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   body.scroll #navigation .logo .light {
@@ -505,7 +505,7 @@
   }
   #navigation .logo {
     margin-right: auto;
-    height: 3.75rem;
+    height: 8rem;
     width: auto;
   }
   #navigation .logo img {
