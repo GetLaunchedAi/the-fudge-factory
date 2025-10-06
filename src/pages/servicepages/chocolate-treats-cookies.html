@@ -36,9 +36,9 @@ order: 200
     <div class="cs-image-group">
       <div class="cs-flex">
         <picture class="cs-background">
-          <source media="(max-width: 600px)" srcset="/images/chocolate_0.png" />
-          <source media="(min-width: 601px)" srcset="/images/chocolate_0.png" />
-          <img loading="lazy" decoding="async" src="/images/chocolate_0.png"
+          <source media="(max-width: 600px)" srcset="/images/image19.jpeg" />
+          <source media="(min-width: 601px)" srcset="/images/image19.jpeg" />
+          <img loading="lazy" decoding="async" src="/images/image19.jpeg"
             alt="chocolate dipped strawberries and cookies" width="542" height="728" />
         </picture>
         <div class="cs-box">
@@ -202,3 +202,10 @@ order: 200
     });
   </script>
 </section>
+
+<!-- ============================================ -->
+<!--              Product Catalog                 -->
+<!-- ============================================ -->
+
+{% set productData = products.cookies %}
+{% include "product-catalog.html" %}

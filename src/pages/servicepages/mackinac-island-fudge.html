@@ -36,9 +36,9 @@ order: 710
         <div class="cs-image-group">
             <div class="cs-flex">
                 <picture class="cs-background">
-                    <source media="(max-width: 600px)" srcset="/images/fudge_0.png" />
-                    <source media="(min-width: 601px)" srcset="/images/fudge_0.png" />
-                    <img loading="lazy" decoding="async" src="/images/fudge_0.png" alt="handmade mackinac island fudge"
+                    <source media="(max-width: 600px)" srcset="/images/image0.jpeg" />
+                    <source media="(min-width: 601px)" srcset="/images/image0.jpeg" />
+                    <img loading="lazy" decoding="async" src="/images/image0.jpeg" alt="handmade mackinac island fudge"
                         width="542" height="728" />
                 </picture>
                 <div class="cs-box">
@@ -145,7 +145,7 @@ order: 710
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
                         width="16" height="18" />
-                    Over 24 classic and seasonal flavors
+                    24 classic and seasonal flavors available
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
@@ -198,7 +198,7 @@ order: 710
                 <li class="cs-faq-item">
                     <button class="cs-button">What flavors do you offer?</button>
                     <p class="cs-item-p">
-                        We offer classic chocolate, maple, peanut butter, and seasonal flavors throughout the year.
+                        We offer 24 delicious flavors including Chocolate Fudge, White Chocolate Fudge, Bear Claw, Chocolate Caramel, Sea Salt Caramel, Maple, Peanut Butter, and many more. See our complete flavor list below!
                     </p>
                 </li>
                 <li class="cs-faq-item">
@@ -233,3 +233,10 @@ order: 710
         }
     </script>
 </section>
+
+<!-- ============================================ -->
+<!--              Product Catalog                 -->
+<!-- ============================================ -->
+
+{% set productData = products.fudge %}
+{% include "product-catalog.html" %}

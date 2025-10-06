@@ -1,4 +1,276 @@
 /*-- -------------------------- -->
+<---      Product Catalog      -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #product-catalog {
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+    position: relative;
+    z-index: 1;
+  }
+  
+  #product-catalog .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  #product-catalog .cs-content {
+    text-align: center;
+    max-width: 50rem;
+  }
+  
+  #product-catalog .cs-topper {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primaryLight);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  #product-catalog .cs-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  #product-catalog .cs-color {
+    color: var(--primaryLight);
+  }
+  
+  #product-catalog .cs-text {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  /* Flavor Section */
+  .cs-flavor-section {
+    width: 100%;
+    max-width: 60rem;
+  }
+  
+  .cs-flavor-section .cs-h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  .cs-flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .cs-flavor-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .cs-flavor-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .cs-flavor-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  /* Items Section */
+  .cs-items-section {
+    width: 100%;
+    max-width: 60rem;
+  }
+  
+  .cs-items-section .cs-h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  .cs-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .cs-item-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .cs-item-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .cs-item-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .cs-item-price {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--primaryLight);
+  }
+  
+  /* Pricing Section */
+  .cs-pricing-section {
+    width: 100%;
+    max-width: 40rem;
+  }
+  
+  .cs-pricing-section .cs-h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  .cs-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .cs-price-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .cs-price-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .cs-price-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bodyTextColorWhite);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cs-price-value {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--primaryLight);
+  }
+  
+  /* CTA Section */
+  .cs-cta-section {
+    text-align: center;
+    max-width: 40rem;
+  }
+  
+  .cs-cta-text {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColorWhite);
+    margin-bottom: 2rem;
+  }
+  
+  .cs-button-solid {
+    font-size: 1.125rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--primary);
+    background-color: var(--bodyTextColorWhite);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .cs-button-solid:hover {
+    color: var(--bodyTextColorWhite);
+    background-color: var(--primaryLight);
+    transform: translateY(-2px);
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .cs-flavor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+  
+  .cs-items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .cs-pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  .cs-flavor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .cs-items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/*-- -------------------------- -->
 <---          Banner            -->
 <--- -------------------------- -*/
 

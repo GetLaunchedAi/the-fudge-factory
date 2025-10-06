@@ -1,0 +1,89 @@
+{
+  "fudge": {
+    "title": "Mackinac Island Fudge",
+    "description": "Handmade daily using an authentic 1887 recipe – creamy, rich, and unforgettable.",
+    "pricing": {
+      "large": "$8.00",
+      "small": "$4.25"
+    },
+    "flavors": [
+      "Chocolate Fudge",
+      "White Chocolate Fudge", 
+      "Bear Claw",
+      "Chocolate Caramel",
+      "Chocolate Caramel Pecan",
+      "Chocolate Cherry",
+      "Chocolate Walnut",
+      "Chocolate Sundae",
+      "Sea Salt Caramel",
+      "Chocolate Snickers",
+      "Chocolate Peanut Butter",
+      "Cappuccino",
+      "Cookies & Cream",
+      "Maple",
+      "Maple Walnut",
+      "Peanut Butter",
+      "White Chocolate Caramel",
+      "White Chocolate Snickers",
+      "White Chocolate Vanilla",
+      "Maple Pecan",
+      "Mint Chocolate Chip",
+      "Butter Pecan",
+      "Vanilla Walnut",
+      "Black Cherry Vanilla"
+    ]
+  },
+  "caramelCorn": {
+    "title": "Gourmet Caramel Corn & Peanut Brittle",
+    "description": "Sweet, buttery, and perfectly crunchy – the perfect gift or personal indulgence.",
+    "flavors": [
+      "Original Caramel Corn",
+      "Sea Salt Caramel Corn", 
+      "Cinnamon Bun"
+    ]
+  },
+  "cookies": {
+    "title": "Chocolate Covered Treats & Cookies",
+    "description": "Pretzels, cookies, and more, dipped in smooth, decadent chocolate made in-store.",
+    "items": [
+      {
+        "name": "Monster Cookies",
+        "price": "$3.00"
+      },
+      {
+        "name": "Chocolate Chip",
+        "price": "$3.00"
+      },
+      {
+        "name": "No Bakes",
+        "price": "$2.00"
+      }
+    ]
+  },
+  "specialtyTreats": {
+    "title": "Specialty Treats",
+    "description": "Additional handcrafted treats to complement our main product lines.",
+    "items": [
+      {
+        "name": "Chocolate Pretzels",
+        "price": "$4.00",
+        "description": "Perfectly balanced sweet and salty chocolate-covered pretzels."
+      },
+      {
+        "name": "Pretzelicious Treats", 
+        "price": "$5.25",
+        "description": "Chocolate-covered pretzels and other delicious treats."
+      },
+      {
+        "name": "Strawberry Jam",
+        "price": "$6.00", 
+        "description": "Homemade strawberry jam made with fresh ingredients."
+      },
+      {
+        "name": "Salt Water Taffy",
+        "price": "Large $17.00 • Small $9.00",
+        "description": "Classic chewy taffy in a variety of flavors."
+      }
+    ]
+  }
+}

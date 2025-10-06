@@ -1,0 +1,78 @@
+<!-- ============================================ -->
+<!--              Product Catalog                 -->
+<!-- ============================================ -->
+
+<section id="product-catalog">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Complete Product Catalog</span>
+      <h2 class="cs-title">All Our <span class="cs-color">{{ productData.title }}</span></h2>
+      <p class="cs-text">
+        {{ productData.description }}
+      </p>
+    </div>
+
+    {% if productData.flavors %}
+    <!-- Flavor List -->
+    <div class="cs-flavor-section">
+      <h3 class="cs-h3">Available Flavors</h3>
+      <div class="cs-flavor-grid">
+        {% for flavor in productData.flavors %}
+        <div class="cs-flavor-item">
+          <span class="cs-flavor-name">{{ flavor }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if productData.items %}
+    <!-- Product Items with Prices -->
+    <div class="cs-items-section">
+      <h3 class="cs-h3">Our Products</h3>
+      <div class="cs-items-grid">
+        {% for item in productData.items %}
+        <div class="cs-item-card">
+          <h4 class="cs-item-name">{{ item.name }}</h4>
+          <span class="cs-item-price">{{ item.price }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if productData.pricing %}
+    <!-- Pricing Information -->
+    <div class="cs-pricing-section">
+      <h3 class="cs-h3">Pricing</h3>
+      <div class="cs-pricing-grid">
+        {% if productData.pricing.large %}
+        <div class="cs-price-item">
+          <span class="cs-price-label">Large</span>
+          <span class="cs-price-value">{{ productData.pricing.large }}</span>
+        </div>
+        {% endif %}
+        {% if productData.pricing.small %}
+        <div class="cs-price-item">
+          <span class="cs-price-label">Small</span>
+          <span class="cs-price-value">{{ productData.pricing.small }}</span>
+        </div>
+        {% endif %}
+        {% if productData.price %}
+        <div class="cs-price-item">
+          <span class="cs-price-label">Price</span>
+          <span class="cs-price-value">{{ productData.price }}</span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="cs-cta-section">
+      <p class="cs-cta-text">
+        Ready to order? Contact us today to place your order or visit our store in Plainwell, MI.
+      </p>
+      <a href="/contact" class="cs-button-solid">Order Now</a>
+    </div>
+  </div>
+</section>
