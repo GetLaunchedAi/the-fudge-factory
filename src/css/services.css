@@ -10,6 +10,9 @@
     position: relative;
     z-index: 1;
   }
+  body.dark-mode #product-catalog {
+    background-color: var(--medium);
+  }
   
   #product-catalog .cs-container {
     width: 100%;
@@ -37,7 +40,11 @@
     margin-bottom: 0.5rem;
     display: block;
   }
-  
+
+  body.dark-mode #product-catalog .cs-topper {
+    color: white !important;
+  }
+
   #product-catalog .cs-title {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 900;
@@ -57,7 +64,7 @@
     text-align: inherit;
     width: 100%;
     max-width: 40.625rem;
-    margin: 0;
+    margin-inline: auto;
     color: var(--bodyTextColorWhite);
   }
   
@@ -1051,7 +1058,7 @@
     background-color: transparent;
   }
   body.dark-mode #faq-254 .cs-topper {
-    color: var(--primaryLight);
+    color: white !important;
   }
   body.dark-mode #faq-254 .cs-title,
   body.dark-mode #faq-254 .cs-text {
