@@ -1,0 +1,200 @@
+---
+layout: "base.html"
+description: "Complete menu of all flavors and products available at The Fudge Factory - Mackinac Island Fudge, Caramel Corn, Cookies, and more"
+metaTitle: "Complete Menu | The Fudge Factory"
+tagTitle: "Complete Menu"
+title: "Complete Menu"
+preloadImg: "/images/landing.png"
+preloadCSS: "/css/services.css"
+permalink: "/flavors/"
+eleventyNavigation:
+  key: Flavors
+  order: 150
+---
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Our Flavors</h1>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/images/landing.png" />
+        <source media="(min-width: 601px)" srcset="/images/landing.png" />
+        <img decoding="async" src="/images/landing.png" alt="complete menu banner" width="1280"
+            height="568" aria-hidden="true" />
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">
+                Our Complete
+                <span class="cs-color">Menu</span>
+            </h1>
+            <p class="cs-text">
+                Discover our full selection of handcrafted treats, from traditional Mackinac Island Fudge to fresh-baked cookies and specialty treats. Everything is made fresh daily using premium ingredients and time-tested recipes.
+            </p>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                Complete Menu                 -->
+<!-- ============================================ -->
+
+<section id="menu-page">
+    <div class="cs-container">
+        
+        <!-- Mackinac Island Fudge -->
+        <div class="cs-menu-category">
+            <div class="cs-category-header">
+                <h2 class="cs-category-title">{{ products.fudge.title }}</h2>
+                <p class="cs-category-description">{{ products.fudge.description }}</p>
+                <div class="cs-pricing-info">
+                    <span class="cs-price-large">Large: {{ products.fudge.pricing.large }}</span>
+                    <span class="cs-price-small">Small: {{ products.fudge.pricing.small }}</span>
+                </div>
+            </div>
+            <div class="cs-menu-grid">
+                {% for flavor in products.fudge.flavors %}
+                <div class="cs-menu-item">
+                    <span class="cs-item-name">{{ flavor }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Caramel Corn -->
+        <div class="cs-menu-category">
+            <div class="cs-category-header">
+                <h2 class="cs-category-title">{{ products.caramelCorn.title }}</h2>
+                <p class="cs-category-description">{{ products.caramelCorn.description }}</p>
+            </div>
+            <div class="cs-menu-grid">
+                {% for flavor in products.caramelCorn.flavors %}
+                <div class="cs-menu-item">
+                    <span class="cs-item-name">{{ flavor }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Cookies -->
+        <div class="cs-menu-category">
+            <div class="cs-category-header">
+                <h2 class="cs-category-title">{{ products.cookies.title }}</h2>
+                <p class="cs-category-description">{{ products.cookies.description }}</p>
+            </div>
+            <div class="cs-menu-list">
+                {% for item in products.cookies.items %}
+                <div class="cs-menu-item-with-price">
+                    <span class="cs-item-name">{{ item.name }}</span>
+                    <span class="cs-item-price">{{ item.price }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Specialty Treats -->
+        <div class="cs-menu-category">
+            <div class="cs-category-header">
+                <h2 class="cs-category-title">{{ products.specialtyTreats.title }}</h2>
+                <p class="cs-category-description">{{ products.specialtyTreats.description }}</p>
+            </div>
+            <div class="cs-menu-list">
+                {% for item in products.specialtyTreats.items %}
+                <div class="cs-menu-item-with-price">
+                    <span class="cs-item-name">{{ item.name }}</span>
+                    <span class="cs-item-price">{{ item.price }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cs-cta-section">
+            <h3 class="cs-cta-title">Ready to Order?</h3>
+            <p class="cs-cta-text">
+                Visit our store in Plainwell, MI or contact us to place an order for your favorite treats.
+            </p>
+            <div class="cs-button-group">
+                <a href="/contact" class="cs-button-solid">Order Now</a>
+                <!-- <a href="/products/" class="cs-button-transparent">View All Products</a> -->
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQs</span>
+            <h2 class="cs-title">Menu FAQs</h2>
+            <p class="cs-text">
+                Have questions about our menu? Here are answers to some of the most common ones.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">Are all flavors available year-round?</button>
+                    <p class="cs-item-p">
+                        Most of our flavors are available year-round, but we also offer seasonal specialties. Contact us to check availability of specific flavors.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Can I sample flavors before buying?</button>
+                    <p class="cs-item-p">
+                        Yes! We encourage customers to sample our flavors in-store. Our friendly staff is happy to help you find your favorites.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Do you create custom flavors?</button>
+                    <p class="cs-item-p">
+                        We occasionally create special flavors for events or holidays. Contact us to discuss custom flavor options.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">How fresh are your flavors?</button>
+                    <p class="cs-item-p">
+                        All our products are made fresh daily in our Plainwell, MI kitchen. We never use pre-packaged or frozen ingredients.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Can I order specific flavors online?</button>
+                    <p class="cs-item-p">
+                        Yes! Contact us to place orders for specific flavors. We can create custom assortments based on your preferences.
+                    </p>
+                </li>
+            </ul>
+            <div class="cs-cta">
+                <h3 class="cs-h3">Visit Our Store</h3>
+                <p class="cs-cta-p">
+                    Experience all our flavors in person at The Fudge Factory in Plainwell, MI.
+                </p>
+                <a href="/contact" class="cs-button-solid">Get Directions</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+        for (const item of faqItems) {
+            const onClick = () => {
+                item.classList.toggle("active");
+            };
+            item.addEventListener("click", onClick);
+        }
+    </script>
+</section>

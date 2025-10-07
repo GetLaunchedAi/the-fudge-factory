@@ -34,7 +34,7 @@
     ]
   },
   "caramelCorn": {
-    "title": "Gourmet Caramel Corn & Peanut Brittle",
+    "title": "Gourmet Caramel Corn",
     "description": "Sweet, buttery, and perfectly crunchy – the perfect gift or personal indulgence.",
     "flavors": [
       "Original Caramel Corn",
@@ -43,8 +43,8 @@
     ]
   },
   "cookies": {
-    "title": "Chocolate Covered Treats & Cookies",
-    "description": "Pretzels, cookies, and more, dipped in smooth, decadent chocolate made in-store.",
+    "title": "Cookies",
+    "description": "Freshly baked cookies made daily in our kitchen.",
     "items": [
       {
         "name": "Monster Cookies",

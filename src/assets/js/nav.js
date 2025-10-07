@@ -7,6 +7,7 @@ const serviceMenu = document.querySelector("#navigation .dropdown");
 const about = document.querySelector('#About\\ Us')
 const contact = document.querySelector('#Contact')
 const projects = document.querySelector('#Projects')
+const flavors = document.querySelector('#Flavors')
 
 const screenWidth = window.screen.width;
 
@@ -34,6 +35,7 @@ serviceMenu.addEventListener('click', function () {
             about.style.display = 'none'
             contact.style.display = 'none'
             projects.style.display = 'none'
+            flavors.style.display = 'none'
         }
 
 
@@ -44,6 +46,7 @@ serviceMenu.addEventListener('click', function () {
             about.style.display = 'block'
             contact.style.display = 'block'
             projects.style.display = 'block'
+            flavors.style.display = 'block'
         }
 
 
