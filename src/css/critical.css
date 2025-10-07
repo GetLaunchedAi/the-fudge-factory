@@ -133,7 +133,7 @@
     text-decoration: none;
     font-weight: 700;
     margin: 0 0.5rem 1rem 0.5rem;
-    color: var(--headerColor);
+    color: white;
     padding: 0;
     background-color: var(--primary);
     display: inline-block;

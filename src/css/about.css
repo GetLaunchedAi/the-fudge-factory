@@ -79,7 +79,7 @@
     text-align: left;
     max-width: 50rem;
     margin: 0 auto 1rem;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #sbs .cs-text {
@@ -115,7 +115,7 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 0 0.25rem;
-    color: var(--headerColor);
+    color: black;
     display: block;
   }
   #sbs .cs-job {
@@ -135,6 +135,7 @@
   }
   #sbs .button-solid {
     margin-top: 2rem;
+    color: #fff;
   }
 }
 /* Desktop - 1024px */
@@ -164,7 +165,7 @@
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
   }
   body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   body.dark-mode #sbs .cs-title,
   body.dark-mode #sbs .cs-text,
@@ -332,9 +333,32 @@
     align-items: center;
   }
 
+  #faq-326 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+
   #faq-326 .cs-title {
-    margin: 0;
-  }
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    color: black;
+    position: relative;
+}
+body.dark-mode #faq-326 .cs-title {
+  color: white;
+}
   #faq-326 .cs-faq-group {
     padding: 0;
     margin: 0;

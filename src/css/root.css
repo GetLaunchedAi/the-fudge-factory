@@ -116,7 +116,7 @@
     position: relative;
     z-index: 1;
     background-color: var(--primary);
-    color: #000;
+    color: #fff;
     transition: color 0.3s;
     transition-delay: 0.1s;
   }
@@ -369,7 +369,6 @@
     overflow: hidden;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #fff;
-    top: 3.7rem;
     padding-top: 0;
     height: 0;
     transition: height 0.3s, padding-top 0.3s, top 0.3s;
@@ -756,23 +755,26 @@
   }
   #footer .right-section .lists {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 96%;
     max-width: 19.1875rem;
     margin: auto;
+    gap: 2rem;
   }
   #footer .right-section .lists ul {
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
+    text-align: center;
+    width: 100%;
   }
   #footer .right-section .lists ul:nth-of-type(3) {
     margin-top: 3.125rem;
   }
   #footer .right-section .lists ul:nth-of-type(3) li {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
   }
@@ -785,12 +787,15 @@
     color: #fff;
     font-size: 1.125rem;
     opacity: 0.9;
+    text-align: center;
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     color: #fff;
     line-height: 1.16666667em;
     transition: color 0.3s;
+    text-align: center;
+    display: block;
   }
   #footer .right-section .lists ul li a:hover {
     color: var(--primary);
@@ -803,6 +808,7 @@
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
+    text-align: center;
   }
   #footer .right-section .lists ul h2:before {
     content: "";
@@ -813,7 +819,8 @@
     background: var(--primary);
     opacity: 1;
     bottom: -1rem;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #footer .right-section .buttons {
     display: flex;
@@ -886,6 +893,8 @@
     max-width: 48.0625rem;
     margin: 0;
     max-width: initial;
+    justify-content: space-between;
+    gap: 0;
   }
   #footer .right-section .lists ul:nth-of-type(3) {
     margin-top: 0;
@@ -910,6 +919,27 @@
   }
   #footer .right-section .lists ul li a:hover:before {
     width: 100%;
+  }
+  #footer .right-section .lists ul {
+    text-align: left;
+    width: auto;
+  }
+  #footer .right-section .lists ul li {
+    text-align: left;
+  }
+  #footer .right-section .lists ul li a {
+    text-align: left;
+    display: inline;
+  }
+  #footer .right-section .lists ul h2 {
+    text-align: left;
+  }
+  #footer .right-section .lists ul h2:before {
+    left: 0;
+    transform: none;
+  }
+  #footer .right-section .lists ul:nth-of-type(3) li {
+    justify-content: flex-start;
   }
   #footer .right-section .buttons {
     justify-content: flex-start;

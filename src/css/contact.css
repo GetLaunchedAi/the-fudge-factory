@@ -44,7 +44,7 @@
     text-align: inherit;
     max-width: 32.625rem;
     margin: 0 0 1rem 0;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #cs-contact-242 .cs-text {
@@ -74,7 +74,7 @@
     font-weight: 700;
     /* 16px - 20px */
     margin-bottom: clamp(1rem, 1em, 1.25rem);
-    color: var(--headerColor);
+    color: black;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -196,7 +196,7 @@
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 0.5rem;
-    color: var(--headerColor);
+    color: black;
     display: block;
   }
   #cs-contact-242 .cs-link {
@@ -384,7 +384,7 @@
     text-align: center;
     max-width: 43.75rem;
     margin: 0 auto 1rem;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #reviews .cs-text {
@@ -448,7 +448,7 @@
     width: 40%;
     margin: 0 auto 0 0;
     display: block;
-    color: var(--headerColor);
+    color: black;
   }
   #reviews .cs-desc {
     font-size: 0.875rem;

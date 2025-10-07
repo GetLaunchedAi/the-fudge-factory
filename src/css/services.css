@@ -239,6 +239,9 @@
     z-index: 1;
     transition: all 0.3s ease;
   }
+  body.dark-mode .cs-button-solid {
+    color: var(--medium);
+  }
   
   .cs-button-solid:hover {
     color: var(--bodyTextColorWhite);
@@ -473,7 +476,7 @@
     width: 100%;
     max-width: 46.125rem;
     margin-inline: auto;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
@@ -487,7 +490,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 0 1rem 0;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #content-page-1402 h2,
@@ -499,6 +502,9 @@
     text-align: inherit;
     margin: 0 0 1rem 0;
     color: var(--headerColor);
+  }
+  #content-page-1402 h4{
+    color: var(--primary) !important;
   }
   #content-page-1402 h2 {
     font-size: 2rem;
@@ -667,7 +673,7 @@
     line-height: 1.2em;
     font-weight: 700;
     margin: 0;
-    color: var(--headerColor);
+    color: var(--primary);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -879,6 +885,27 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
+  #faq-254 .cs-topper {
+    font-size: clamp(0.8125rem, 1.6vw, 1rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+}
+#faq-254 .cs-content h2 {
+  font-size: var(--headerFontSize);
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: left;
+  max-width: 50rem;
+  margin: 0 auto 1rem;
+  color: black;
+  position: relative;
+}
 
   #faq-254 .cs-faq-group {
     padding: 0;
@@ -983,7 +1010,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 1rem;
-    color: var(--headerColor);
+    color: black;
   }
   #faq-254 .cs-cta-p {
     /* 16px - 20px */
@@ -1058,7 +1085,7 @@
     background-color: transparent;
   }
   body.dark-mode #faq-254 .cs-topper {
-    color: white !important;
+    color: var(--primary);
   }
   body.dark-mode #faq-254 .cs-title,
   body.dark-mode #faq-254 .cs-text {
@@ -1107,8 +1134,16 @@
   }
 
   #services-563 .cs-topper {
-    color: var(--headerColor);
-  }
+    font-size: clamp(0.8125rem, 1.6vw, 1rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    /* text-align: center; */
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    /* margin-bottom: 1rem; */
+    display: block;
+}
   #services-563 .cs-text {
     margin-bottom: 1rem;
   }
@@ -1126,7 +1161,7 @@
     text-align: inherit;
     /* 16px - 20px */
     margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
-    color: var(--headerColor);
+    color: black;
   }
   #services-563 .cs-ul {
     width: 100%;
@@ -1576,4 +1611,7 @@ hr {
     border-color: rgba(255, 255, 255, 0.1);
     color: white;
   }
+}
+.cs-content-new {
+  text-align: center !important;
 }

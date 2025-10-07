@@ -79,7 +79,7 @@
     text-align: left;
     max-width: 50rem;
     margin: 0 auto 1rem;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #sbs .cs-text {
@@ -115,7 +115,7 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 0 0.25rem;
-    color: var(--headerColor);
+    color: black;
     display: block;
   }
   #sbs .cs-job {
@@ -135,6 +135,7 @@
   }
   #sbs .button-solid {
     margin-top: 2rem;
+    color: #fff;
   }
 }
 /* Desktop - 1024px */
@@ -164,7 +165,7 @@
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
   }
   body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   body.dark-mode #sbs .cs-title,
   body.dark-mode #sbs .cs-text,
@@ -264,7 +265,7 @@
     text-align: left;
     max-width: 50rem;
     margin: 0 auto 1rem;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #sbs-r .cs-text {
@@ -348,7 +349,7 @@
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
   }
   body.dark-mode #sbs-r .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   body.dark-mode #sbs-r .cs-title,
   body.dark-mode #sbs-r .cs-text,
@@ -515,7 +516,7 @@
     text-align: center;
     max-width: 43.75rem;
     margin: 0 auto 1rem;
-    color: var(--headerColor);
+    color: black;
     position: relative;
   }
   #reviews .cs-text {
@@ -579,7 +580,7 @@
     width: 40%;
     margin: 0 auto 0 0;
     display: block;
-    color: var(--headerColor);
+    color: black;
   }
   #reviews .cs-desc {
     font-size: 0.875rem;
