@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: /admin/
 Allow: /
-
-Sitemap: https://thefudgefactoryinplainwell.com/sitemap.xml
