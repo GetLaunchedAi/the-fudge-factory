@@ -729,7 +729,7 @@
     display: inline-block;
     margin: auto;
     width: auto;
-    height: 3.125em;
+    height: 8rem !important;
     margin-bottom: 1.875em;
     text-align: center;
   }
