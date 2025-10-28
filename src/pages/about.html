@@ -17,7 +17,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
+  <h1 id="home-h" class="fx fade-in">About Us</h1>
   {% image './src/images/landing.png', 'The Fudge Factory team crafting fudge', '', 'lazy',
   '(max-width: 850px) 850px, 1920px'%}
 </section>
@@ -29,12 +29,12 @@ eleventyNavigation:
 <section id="sbs">
   <div class="cs-container">
     <!-- Left Image Section -->
-    <div class="cs-left">
+    <div class="cs-left fx slide-top staggered-m" style="--i:1">
       {% image './src/images/about_img_0.jpeg', 'handmade fudge preparation',
       'cs-picture cs-picture1', 'lazy'%}
     </div>
     <!-- Right Content Section-->
-    <div class="cs-right">
+    <div class="cs-right fx slide-top staggered-m" style="--i:2">
       <span class="cs-topper">Our Story</span>
       <h2 class="cs-title">Crafting Sweet Memories Since Day One</h2>
       <p class="cs-text">
@@ -45,13 +45,13 @@ eleventyNavigation:
       <p class="cs-text">
         From classic chocolate fudge to unique seasonal varieties, each batch is made fresh with love and attention to
         detail.
-        Whether you’re picking up a sweet treat for yourself or gifting someone special, we’re here to make every moment
+        Whether you're picking up a sweet treat for yourself or gifting someone special, we're here to make every moment
         a little sweeter.
       </p>
 
       <div class="cs-flex-group">
         <p class="cs-flex-p">
-          I’m Mark W Aronoff, founder of The Fudge Factory. What started as a passion for making homemade fudge
+          I'm Mark W Aronoff, founder of The Fudge Factory. What started as a passion for making homemade fudge
           has grown into a beloved Plainwell, MI brand.
           Our mission is simple – to spread joy, one piece of fudge at a time.
         </p>
@@ -70,13 +70,13 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="faq-326">
-  <div class="cs-container">
-    <div class="cs-content">
+  <div class="cs-container fx fade-in">
+    <div class="cs-content fx slide-top staggered-m" style="--i:1">
       <span class="cs-topper">FAQs</span>
       <h2 class="cs-title">Frequently Asked Questions</h2>
     </div>
     <div class="cs-flex-group">
-      <ul class="cs-faq-group">
+      <ul class="cs-faq-group fx slide-top staggered-m" style="--i:2">
         <li class="cs-faq-item active">
           <button class="cs-button">
             <span class="cs-button-text">
@@ -150,15 +150,15 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="cta">
-  <div class="container">
-    <h2 class="title">
+  <div class="container fx fade-in">
+    <h2 class="title fx slide-top staggered-m" style="--i:1">
       Taste the Sweetness of The Fudge Factory
     </h2>
-    <p>
+    <p class="fx slide-top staggered-m" style="--i:2">
       Experience handcrafted fudge like never before. Order online or stop by today and treat yourself to Plainwell, MI's
       best fudge.
     </p>
-    <a href="/contact/" class="button-solid">Order Now</a>
+    <a href="/contact/" class="button-solid fx slide-top staggered-m" style="--i:3">Order Now</a>
   </div>
   {% image './src/images/final_home_img.jpg', 'The Fudge Factory signature fudge display',
   '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}

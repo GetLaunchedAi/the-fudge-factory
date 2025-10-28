@@ -17,7 +17,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-    <h1 id="home-h">Our Flavors</h1>
+    <h1 id="home-h" class="fx fade-in">Our Flavors</h1>
     <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="/images/landing.png" />
         <source media="(min-width: 601px)" srcset="/images/landing.png" />
@@ -31,8 +31,8 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="content-page-1402">
-    <div class="cs-container">
-        <div class="cs-content cs-content-new">
+    <div class="cs-container fx fade-in">
+        <div class="cs-content cs-content-new fx slide-top staggered-m" style="--i:1">
             <h1 class="cs-title">
                 Our Complete
                 <span class="cs-color">Menu</span>
@@ -53,7 +53,7 @@ eleventyNavigation:
     <div class="cs-container">
         
         <!-- Mackinac Island Fudge -->
-        <div class="cs-menu-category">
+        <div class="cs-menu-category fx slide-top staggered-m" style="--i:1">
             <div class="cs-category-header">
                 <h2 class="cs-category-title">{{ products.fudge.title }}</h2>
                 <p class="cs-category-description">{{ products.fudge.description }}</p>
@@ -64,7 +64,7 @@ eleventyNavigation:
             </div>
             <div class="cs-menu-grid">
                 {% for flavor in products.fudge.flavors %}
-                <div class="cs-menu-item">
+                <div class="cs-menu-item fx slide-top staggered-m" style="--i:{{ forloop.index }}">
                     <span class="cs-item-name">{{ flavor }}</span>
                 </div>
                 {% endfor %}
@@ -72,14 +72,14 @@ eleventyNavigation:
         </div>
 
         <!-- Caramel Corn -->
-        <div class="cs-menu-category">
+        <div class="cs-menu-category fx slide-top staggered-m" style="--i:2">
             <div class="cs-category-header">
                 <h2 class="cs-category-title">{{ products.caramelCorn.title }}</h2>
                 <p class="cs-category-description">{{ products.caramelCorn.description }}</p>
             </div>
             <div class="cs-menu-grid">
                 {% for flavor in products.caramelCorn.flavors %}
-                <div class="cs-menu-item">
+                <div class="cs-menu-item fx slide-top staggered-m" style="--i:{{ forloop.index }}">
                     <span class="cs-item-name">{{ flavor }}</span>
                 </div>
                 {% endfor %}
@@ -87,14 +87,14 @@ eleventyNavigation:
         </div>
 
         <!-- Cookies -->
-        <div class="cs-menu-category">
+        <div class="cs-menu-category fx slide-top staggered-m" style="--i:3">
             <div class="cs-category-header">
                 <h2 class="cs-category-title">{{ products.cookies.title }}</h2>
                 <p class="cs-category-description">{{ products.cookies.description }}</p>
             </div>
             <div class="cs-menu-list">
                 {% for item in products.cookies.items %}
-                <div class="cs-menu-item-with-price">
+                <div class="cs-menu-item-with-price fx slide-top staggered-m" style="--i:{{ forloop.index }}">
                     <span class="cs-item-name">{{ item.name }}</span>
                     <span class="cs-item-price">{{ item.price }}</span>
                 </div>
@@ -103,14 +103,14 @@ eleventyNavigation:
         </div>
 
         <!-- Specialty Treats -->
-        <div class="cs-menu-category">
+        <div class="cs-menu-category fx slide-top staggered-m" style="--i:4">
             <div class="cs-category-header">
                 <h2 class="cs-category-title">{{ products.specialtyTreats.title }}</h2>
                 <p class="cs-category-description">{{ products.specialtyTreats.description }}</p>
             </div>
             <div class="cs-menu-list">
                 {% for item in products.specialtyTreats.items %}
-                <div class="cs-menu-item-with-price">
+                <div class="cs-menu-item-with-price fx slide-top staggered-m" style="--i:{{ forloop.index }}">
                     <span class="cs-item-name">{{ item.name }}</span>
                     <span class="cs-item-price">{{ item.price }}</span>
                 </div>
@@ -119,7 +119,7 @@ eleventyNavigation:
         </div>
 
         <!-- Call to Action -->
-        <div class="cs-cta-section">
+        <div class="cs-cta-section fx slide-top staggered-m" style="--i:5">
             <h3 class="cs-cta-title">Ready to Order?</h3>
             <p class="cs-cta-text">
                 Visit our store in Plainwell, MI or contact us to place an order for your favorite treats.
@@ -138,8 +138,8 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="faq-254">
-    <div class="cs-container">
-        <div class="cs-content">
+    <div class="cs-container fx fade-in">
+        <div class="cs-content fx slide-top staggered-m" style="--i:1">
             <span class="cs-topper">FAQs</span>
             <h2 class="cs-title">Menu FAQs</h2>
             <p class="cs-text">
@@ -147,7 +147,7 @@ eleventyNavigation:
             </p>
         </div>
         <div class="cs-flex-group">
-            <ul class="cs-faq-group">
+            <ul class="cs-faq-group fx slide-top staggered-m" style="--i:2">
                 <li class="cs-faq-item active">
                     <button class="cs-button">Are all flavors available year-round?</button>
                     <p class="cs-item-p">
@@ -179,7 +179,7 @@ eleventyNavigation:
                     </p>
                 </li>
             </ul>
-            <div class="cs-cta">
+            <div class="cs-cta fx slide-top staggered-m" style="--i:3">
                 <h3 class="cs-h3">Visit Our Store</h3>
                 <p class="cs-cta-p">
                     Experience all our flavors in person at The Fudge Factory in Plainwell, MI.
