@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https:///mackinac-island-fudge/">
+
+        <meta name="description" content="Authentic 1887 Mackinac Island Fudge, handmade in-store with rich, creamy flavors you’ll love.">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Traditional Mackinac Island Fudge | The Fudge Factory"/>
+        <meta property="og:description" content="Authentic 1887 Mackinac Island Fudge, handmade in-store with rich, creamy flavors you’ll love."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https:///mackinac-island-fudge/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo-light.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/fudge_banner.png"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+        <link rel="stylesheet" href="/css/critical.css"/>
+        <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" href="/css/services.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                Mackinac Island Fudge | The Fudge Factory
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+        <script defer src="/assets/js/animations.js"></script>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo_white.png" decoding="async" alt="logo"
+                width="221" height="66">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo_dark.png" decoding="async" loading="lazy"
+                alt="logo" width="221" height="66">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu" aria-label="main navigation">
+            <ul>
+                <li class="" id="Home">
+                    
+                    <a  href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                <li class="" id="Flavors">
+                    
+                    <a  href="/flavors/">
+                        Flavors
+                    </a>
+                    
+                </li>
+                <li class="dropdown" id="Products">
+                    
+                    <a class="dropdown-toggle" role="button" tabindex="0">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/mackinac-island-fudge/">Traditional Mackinac Island Fudge</a></li>
+                        <li><a href="/gourmet-caramel-corn-peanut-brittle/">Gourmet Caramel Corn & Peanut Brittle</a></li>
+                        <li><a href="/chocolate-treats-cookies/">Chocolate Covered Treats & Cookies</a></li>
+                        <li><a href="/specialty-treats/">Specialty Treats</a></li>
+                    </ul>
+
+                    
+                </li>
+                <li class="" id="About Us">
+                    
+                    <a  href="/about/">
+                        About Us
+                    </a>
+                    
+                </li>
+                <li class="" id="Contact">
+                    
+                    <a  href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                style="enable-background:new 0 0 480 480" xml:space="preserve">
+                <path
+                    d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+            </svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15"
+                height="15">
+        </button>
+    </div>
+</div>
+        <main id="main">
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Traditional Mackinac Island Fudge</h1>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/images/fudge_banner.png" />
+        <source media="(min-width: 601px)" srcset="/images/fudge_banner.png" />
+        <img decoding="async" src="/images/fudge_banner.png" alt="traditional mackinac island fudge banner" width="1280"
+            height="568" aria-hidden="true" />
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group fx slide-top staggered-m" style="--i:1">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="/images/image_3.jpg" />
+                    <source media="(min-width: 601px)" srcset="/images/image_3.jpg" />
+                    <img loading="lazy" decoding="async" src="/images/image_3.jpg" alt="handmade mackinac island fudge"
+                        width="542" height="728" />
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="icon" width="60"
+                        height="60" />
+                    <span class="cs-desc">Handcrafted Since 1887</span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item fx slide-top staggered-m" style="--i:3">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
+                            width="32" height="32" />
+                        Authentic 1887 Recipe
+                    </h3>
+                    <p class="cs-item-text">
+                        Passed down through generations, our original Martha Murdick recipe creates the perfect creamy
+                        fudge flavor.
+                    </p>
+                </li>
+                <li class="cs-item fx slide-top staggered-m" style="--i:4">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon"
+                            width="32" height="32" />
+                        Freshly Made In-Store
+                    </h3>
+                    <p class="cs-item-text">
+                        Every batch is made by hand in small quantities to ensure quality, freshness, and rich flavor.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content fx slide-top staggered-m" style="--i:2">
+            <hr />
+            <br /><br />
+            <h1 class="cs-title">
+                Traditional Mackinac Island Fudge by
+                <span class="cs-color">The Fudge Factory</span>
+            </h1>
+            <br />
+            <h3>Authentic • Handmade • Unforgettable</h3>
+            <br />
+            <p>
+                At The Fudge Factory, we take pride in creating authentic Mackinac Island Fudge using the original 1887
+                recipe. Each piece is rich, creamy, and carefully crafted to bring you a taste of tradition in every
+                bite.
+            </p>
+            <p>
+                Our fudge is more than just candy – it's a piece of history, made fresh daily in our store and perfect
+                for gifts, celebrations, or simply treating yourself.
+            </p>
+            <br />
+            <hr />
+            <br />
+            <div class="desktop-only">
+                <h3>Our Fudge-Making Process</h3>
+                <ol>
+                    <li>Select the finest chocolate, cream, and sugar</li>
+                    <li>Hand-cook in small batches on marble tables</li>
+                    <li>Cut, package, and serve fresh the same day</li>
+                    <li>Deliver a melt-in-your-mouth experience</li>
+                </ol>
+                <h4>Why Choose The Fudge Factory?</h4>
+                <ul>
+                    <li>Over 130 years of tradition in every batch</li>
+                    <li>Made fresh daily – never pre-packaged</li>
+                    <li>Variety of flavors to satisfy every taste</li>
+                    <li>Perfect gift for any occasion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-563">
+    <div class="cs-container">
+        <picture class="cs-picture fx slide-top staggered-m" style="--i:1">
+            <source media="(max-width: 600px)" srcset="/images/image_4.png" />
+            <source media="(min-width: 601px)" srcset="/images/image_4.png" />
+            <img loading="lazy" decoding="async" src="/images/image_4.png" alt="mackinac island fudge display"
+                width="630" height="528" aria-hidden="true" />
+        </picture>
+        <div class="cs-content fx slide-top staggered-m" style="--i:2">
+            <span class="cs-topper">A Taste of Tradition</span>
+            <br />
+            <h3 class="cs-h3">
+                Handcrafted
+                <span class="cs-color">Mackinac Island Fudge</span>
+            </h3>
+            <p class="cs-text">
+                Made with time-honored techniques and premium ingredients, our fudge captures the true essence of
+                Mackinac Island’s sweet legacy.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
+                        width="16" height="18" />
+                    24 classic and seasonal flavors available
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
+                        width="16" height="18" />
+                    Perfect for gifts, events, or personal indulgence
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
+                        width="16" height="18" />
+                    Freshly prepared daily in-store
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Order Your Fudge Today</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+    <section id="faq-254">
+        <div class="cs-container fx fade-in">
+            <div class="cs-content">
+            <span class="cs-topper">FAQs</span>
+            <h2 class="cs-title">Mackinac Island Fudge FAQs</h2>
+            <p class="cs-text">
+                Have questions about our fudge? Here are answers to some of the most common ones.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group fx slide-top staggered-m" style="--i:1">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        What makes your fudge unique?
+                    </button>
+                    <p class="cs-item-p">
+                        Our fudge is made with the original 1887 recipe from Martha Murdick, ensuring authentic flavor
+                        and texture.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Do you make it fresh daily?</button>
+                    <p class="cs-item-p">
+                        Yes! All our fudge is made fresh in-store every day for maximum freshness and quality.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">What flavors do you offer?</button>
+                    <p class="cs-item-p">
+                        We offer 24 delicious flavors including Chocolate Fudge, White Chocolate Fudge, Bear Claw, Chocolate Caramel, Sea Salt Caramel, Maple, Peanut Butter, and many more. See our complete flavor list below!
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Can I order online?</button>
+                    <p class="cs-item-p">
+                        Absolutely. Contact us to place an order for shipping or pick-up.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Do you offer gift packaging?</button>
+                    <p class="cs-item-p">
+                        Yes, we provide beautiful gift packaging, perfect for any special occasion.
+                    </p>
+                </li>
+            </ul>
+            <div class="cs-cta fx slide-top staggered-m" style="--i:2">
+                <h3 class="cs-h3">Ready to Taste Tradition?</h3>
+                <p class="cs-cta-p">
+                    Experience authentic Mackinac Island Fudge from The Fudge Factory today.
+                </p>
+                <a href="/contact" class="cs-button-solid">Order Now</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+        for (const item of faqItems) {
+            const onClick = () => {
+                item.classList.toggle("active");
+            };
+            item.addEventListener("click", onClick);
+        }
+    </script>
+</section>
+</main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+  <div class="container">
+    <div class="left-section">
+      <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo_white.png"
+          alt="The Fudge Factory logo" width="264" height="78" /></a>
+    </div>
+    <div class="right-section">
+      <div class="lists">
+        <ul>
+          <li>
+            <h2>Information</h2>
+          </li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/mackinac-island-fudge/">Products</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>Our Products</h2>
+          </li>
+          <li><a href="/mackinac-island-fudge/">Mackinac Island Fudge</a></li>
+          <li><a href="/gourmet-caramel-corn-peanut-brittle/">Caramel Corn & Peanut Brittle</a></li>
+          <li><a href="/chocolate-treats-cookies/">Chocolate Treats & Cookies</a></li>
+          <li><a href="/specialty-treats/">Specialty Treats</a></li>
+        </ul>
+        <ul>
+          <li>
+            <h2>Contact</h2>
+          </li>
+          <li>
+            <a href="/contact">Plainwell, MI</a>
+          </li>
+          <li>
+            <a href="tel:616-262-7727">Tel: (616) 262-7727</a>
+          </li>
+          <li>
+            <a href="mailto:Aronoffmark031@gmail.com">Click to Email</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="credit">
+    <span>Designed and Hand Coded by</span>
+    <a href="www.kalamazoowebsitedesign.com" target="_blank" rel="noopener">Kalamazoo Website Design</a>
+    <span class="copyright"> Copyright 2025 - Present</span>
+  </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>

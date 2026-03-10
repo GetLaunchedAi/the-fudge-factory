@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/</loc>
+    <lastmod>2026-03-10T17:36:04.408Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/about\index/</loc>
+    <lastmod>2026-03-10T17:36:04.409Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/admin\index/</loc>
+    <lastmod>2026-03-10T17:36:04.402Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/chocolate-treats-cookies\index/</loc>
+    <lastmod>2026-03-10T17:36:04.413Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/contact\index/</loc>
+    <lastmod>2026-03-10T17:36:04.410Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/flavors\index/</loc>
+    <lastmod>2026-03-10T17:36:04.411Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/gourmet-caramel-corn-peanut-brittle\index/</loc>
+    <lastmod>2026-03-10T17:36:04.414Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/mackinac-island-fudge\index/</loc>
+    <lastmod>2026-03-10T17:36:04.415Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/products\index/</loc>
+    <lastmod>2026-03-10T17:36:04.412Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://thefudgefactoryinplainwell.com/specialty-treats\index/</loc>
+    <lastmod>2026-03-10T17:36:04.416Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>

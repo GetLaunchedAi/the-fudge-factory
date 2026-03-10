@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https:///about/">
+
+        <meta name="description" content="Discover The Fudge Factory – your trusted source for handcrafted, premium fudge in Plainwell, MI. Locally made with the finest ingredients, our fudge brings tradition and sweetness to every bite.">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="About The Fudge Factory | Handcrafted Fudge in Plainwell, MI"/>
+        <meta property="og:description" content="Discover The Fudge Factory – your trusted source for handcrafted, premium fudge in Plainwell, MI. Locally made with the finest ingredients, our fudge brings tradition and sweetness to every bite."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https:///about/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo-light.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/landing.png"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+        <link rel="stylesheet" href="/css/critical.css"/>
+        <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" href="/css/about.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                About | The Fudge Factory
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+        <script defer src="/assets/js/animations.js"></script>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo_white.png" decoding="async" alt="logo"
+                width="221" height="66">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo_dark.png" decoding="async" loading="lazy"
+                alt="logo" width="221" height="66">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu" aria-label="main navigation">
+            <ul>
+                <li class="" id="Home">
+                    
+                    <a  href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                <li class="" id="Flavors">
+                    
+                    <a  href="/flavors/">
+                        Flavors
+                    </a>
+                    
+                </li>
+                <li class="dropdown" id="Products">
+                    
+                    <a class="dropdown-toggle" role="button" tabindex="0">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/mackinac-island-fudge/">Traditional Mackinac Island Fudge</a></li>
+                        <li><a href="/gourmet-caramel-corn-peanut-brittle/">Gourmet Caramel Corn & Peanut Brittle</a></li>
+                        <li><a href="/chocolate-treats-cookies/">Chocolate Covered Treats & Cookies</a></li>
+                        <li><a href="/specialty-treats/">Specialty Treats</a></li>
+                    </ul>
+
+                    
+                </li>
+                <li class="" id="About Us">
+                    
+                    <a  class="active"  href="/about/">
+                        About Us
+                    </a>
+                    
+                </li>
+                <li class="" id="Contact">
+                    
+                    <a  href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                style="enable-background:new 0 0 480 480" xml:space="preserve">
+                <path
+                    d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+            </svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15"
+                height="15">
+        </button>
+    </div>
+</div>
+        <main id="main">
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h" class="fx fade-in">About Us</h1>
+  <picture class="">
+      <source type="image/webp" srcset="/images/landing-200w.webp 200w, /images/landing-400w.webp 400w, /images/landing-850w.webp 850w, /images/landing-1457w.webp 1457w" sizes="(max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/landing-200w.jpeg 200w, /images/landing-400w.jpeg 400w, /images/landing-850w.jpeg 850w, /images/landing-1457w.jpeg 1457w" sizes="(max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/landing-200w.jpeg"
+        width="1457"
+        height="455"
+        alt="The Fudge Factory team crafting fudge"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left fx slide-top staggered-m" style="--i:1">
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/about_img_0-200w.webp 200w, /images/about_img_0-400w.webp 400w, /images/about_img_0-850w.webp 850w, /images/about_img_0-1920w.webp 1920w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/about_img_0-200w.jpeg 200w, /images/about_img_0-400w.jpeg 400w, /images/about_img_0-850w.jpeg 850w, /images/about_img_0-1920w.jpeg 1920w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/about_img_0-200w.jpeg"
+        width="1920"
+        height="1799"
+        alt="handmade fudge preparation"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right fx slide-top staggered-m" style="--i:2">
+      <span class="cs-topper">Our Story</span>
+      <h2 class="cs-title">Crafting Sweet Memories Since Day One</h2>
+      <p class="cs-text">
+        The Fudge Factory is a locally owned confectionery dedicated to creating rich, creamy, and unforgettable fudge.
+        We pride ourselves on using premium ingredients and traditional recipes to deliver flavors that bring people
+        together.
+      </p>
+      <p class="cs-text">
+        From classic chocolate fudge to unique seasonal varieties, each batch is made fresh with love and attention to
+        detail.
+        Whether you're picking up a sweet treat for yourself or gifting someone special, we're here to make every moment
+        a little sweeter.
+      </p>
+
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          I'm Mark W Aronoff, founder of The Fudge Factory. What started as a passion for making homemade fudge
+          has grown into a beloved Plainwell, MI brand.
+          Our mission is simple – to spread joy, one piece of fudge at a time.
+        </p>
+        <span class="cs-name">Mark W Aronoff</span>
+        <span class="cs-job">Founder</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
+          height="77" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-326">
+  <div class="cs-container fx fade-in">
+    <div class="cs-content fx slide-top staggered-m" style="--i:1">
+      <span class="cs-topper">FAQs</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group fx slide-top staggered-m" style="--i:2">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              What makes your fudge special?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We make every batch by hand using time-tested recipes and only the highest quality ingredients for a rich,
+            creamy texture and exceptional flavor.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Do you offer custom orders or gift boxes?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Absolutely! We create custom assortments and beautifully packaged gift boxes perfect for any occasion.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Where can I buy your fudge?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            You can visit our store in Plainwell, MI, order online, or find us at local markets and events throughout the
+            year.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Do you have seasonal flavors?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Yes! We love creating seasonal specialties like pumpkin spice fudge in the fall and peppermint bark fudge
+            during the holidays.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Can I ship fudge as a gift?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Of course. We carefully package and ship our fudge nationwide so you can share sweetness anywhere.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+  const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+  for (const item of faqItems) {
+    const onClick = () => {
+      item.classList.toggle("active");
+    };
+    item.addEventListener("click", onClick);
+  }
+</script>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container fx fade-in">
+    <h2 class="title fx slide-top staggered-m" style="--i:1">
+      Taste the Sweetness of The Fudge Factory
+    </h2>
+    <p class="fx slide-top staggered-m" style="--i:2">
+      Experience handcrafted fudge like never before. Order online or stop by today and treat yourself to Plainwell, MI's
+      best fudge.
+    </p>
+    <a href="/contact/" class="button-solid fx slide-top staggered-m" style="--i:3">Order Now</a>
+  </div>
+  <picture class="">
+      <source type="image/webp" srcset="/images/final_home_img-200w.webp 200w, /images/final_home_img-400w.webp 400w, /images/final_home_img-850w.webp 850w, /images/final_home_img-1600w.webp 1600w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920">
+  <source type="image/jpeg" srcset="/images/final_home_img-200w.jpeg 200w, /images/final_home_img-400w.jpeg 400w, /images/final_home_img-850w.jpeg 850w, /images/final_home_img-1600w.jpeg 1600w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920">
+      <img
+        src="/images/final_home_img-200w.jpeg"
+        width="1600"
+        height="896"
+        alt="The Fudge Factory signature fudge display"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section></main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+  <div class="container">
+    <div class="left-section">
+      <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo_white.png"
+          alt="The Fudge Factory logo" width="264" height="78" /></a>
+    </div>
+    <div class="right-section">
+      <div class="lists">
+        <ul>
+          <li>
+            <h2>Information</h2>
+          </li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/mackinac-island-fudge/">Products</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>Our Products</h2>
+          </li>
+          <li><a href="/mackinac-island-fudge/">Mackinac Island Fudge</a></li>
+          <li><a href="/gourmet-caramel-corn-peanut-brittle/">Caramel Corn & Peanut Brittle</a></li>
+          <li><a href="/chocolate-treats-cookies/">Chocolate Treats & Cookies</a></li>
+          <li><a href="/specialty-treats/">Specialty Treats</a></li>
+        </ul>
+        <ul>
+          <li>
+            <h2>Contact</h2>
+          </li>
+          <li>
+            <a href="/contact">Plainwell, MI</a>
+          </li>
+          <li>
+            <a href="tel:616-262-7727">Tel: (616) 262-7727</a>
+          </li>
+          <li>
+            <a href="mailto:Aronoffmark031@gmail.com">Click to Email</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="credit">
+    <span>Designed and Hand Coded by</span>
+    <a href="www.kalamazoowebsitedesign.com" target="_blank" rel="noopener">Kalamazoo Website Design</a>
+    <span class="copyright"> Copyright 2025 - Present</span>
+  </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>
